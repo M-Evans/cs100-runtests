@@ -1,14 +1,14 @@
 #CS100 Runtests
 
 ##Table of Contents
-**1.[What is cs100-runtests?] (#What-is-cs100-runtests?)
-**2.[Installation] (#Installation)
-**3.[How do I use it?] (#How-do-I-use-it?)
-**  3a.[The Vim Pane] (#The-Vim-Pane)
-**  3b.[The Shell Pane](#The-Shell-Pane)
-**  3c.[The Runtests Controller Pane] (#The-Runtests-Controller-Pane)
-**4.[An Example Walkthrough] (#An-Example-Walkthrough)
-**5.[Features](#Features)
+1.[What is cs100-runtests?] (#what-is-cs100-runtests?)
+2.[Installation] (#installation)
+3.[How do I use it?] (#how-do-i-use-it?)
+  3a.[The Vim Pane] (#the-vim-pane)
+  3b.[The Shell Pane](#the-shell-pane)
+  3c.[The Runtests Controller Pane] (#the-runtests-controller-pane)
+4.[An Example Walkthrough] (#an-example-walkthrough)
+5.[Features](#features)
 
 ##What is cs100-runtests?
 ``cs100-runtests`` is a script developed to assist testing of student-made bash shells.
@@ -25,9 +25,9 @@ where ``<shell>`` is the shell you want to test (e.g. ``bin/rshell``, ``sh``, ``
 These parameters are optional, as runtests will default to ``bin/rshell`` if no shell is entered, and it is possible to load a test case file within the program after the script has been run.
 
 Three panes are created when ``cs100-runtests`` is started.
-The left pane is the [Vim pane](#The Vim Pane), which contains an open grade file that is created in the current directory. 
-The upper right pane is the [Shell pane](#The Shell Pane), where the user-input <shell> (or default ``bin/rshell``) is started.
-The lower right pane is the [Runtests Controller Pane](#The Runtests Controller Pane), which awaits further commands.
+The left pane is the [Vim pane](#the-vim-pane), which contains an open grade file that is created in the current directory. 
+The upper right pane is the [Shell pane](#the-shell-pane), where the user-input <shell> (or default ``bin/rshell``) is started.
+The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane), which awaits further commands.
 
 ###The Vim Pane
 
