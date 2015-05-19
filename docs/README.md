@@ -1,14 +1,14 @@
 #CS100 Runtests
 
 ##Table of Contents
-1.[What is cs100-runtests?] (#What is cs100-runtests?)
-2.[Installation] (#Installation)
-3.[How do I use it?] (#How do I use it?)
-  3a.[The Vim Pane] (#The Vim Pane)
-  3b.[The Shell Pane](#The Shell Pane)
-  3c.[The Runtests Controller Pane] (#The Runtests Controller Pane)
-4.[An Example Walkthrough] (#An Example Walkthrough)
-5.[Features](#Features)
+**1.[What is cs100-runtests?] (#What-is-cs100-runtests?)
+**2.[Installation] (#Installation)
+**3.[How do I use it?] (#How-do-I-use-it?)
+**  3a.[The Vim Pane] (#The-Vim-Pane)
+**  3b.[The Shell Pane](#The-Shell-Pane)
+**  3c.[The Runtests Controller Pane] (#The-Runtests-Controller-Pane)
+**4.[An Example Walkthrough] (#An-Example-Walkthrough)
+**5.[Features](#Features)
 
 ##What is cs100-runtests?
 ``cs100-runtests`` is a script developed to assist testing of student-made bash shells.
