@@ -115,6 +115,29 @@ Step forward as many times as you would like to. The controller prints out an er
 
 (screenshot 8 here)
 
+Now that we have finished testing the ``shell``, let's grade it. First, zero out all of the grades by entering ``zero`` in the controller pane. 
 
+(screenshot 9 here)
+
+Let's say the student earned full credit for the objectives on lines 5 and 7.
+To enter their grades, type in:
+```
+f 5
+f 7
+```
+Perhaps they received 4 points for the objective on line 6:
+```
+g 6 4
+```
+And received 11 points for the objectives on lines 8 and 9:
+```
+g 8 11
+g 9 11
+```
+If you wanted to give a full grade for every objective on every line, run ``full``.
+
+Now that we are done testing and grading ``bin/rshell``, type ``exit`` and hit ``Enter`` to stop running ``cs100-runtests``.
+
+Congratulations. You now know the basic features of ``cs100-runtests``.
 
 ##Features
