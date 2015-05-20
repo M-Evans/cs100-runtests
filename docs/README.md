@@ -1,21 +1,14 @@
 #CS100 Runtests
 
 ##Table of Contents
-1.[What is cs100-runtests?] (#what-is-cs100-runtests?)
-
-2.[Installation] (#installation)
-
-3.[How do I use it?] (#how-do-i-use-it?)
-
-  3a.[The Vim Pane] (#the-vim-pane)
-
-  3b.[The Shell Pane](#the-shell-pane)
-
-  3c.[The Runtests Controller Pane] (#the-runtests-controller-pane)
-
-4.[An Example Walkthrough] (#an-example-walkthrough)
-
-5.[Features](#features)
+1.[What is cs100-runtests?] (#what-is-cs100-runtests?)  
+2.[Installation] (#installation)  
+3.[How do I use it?] (#how-do-i-use-it?)  
+  3a.[The Vim Pane] (#the-vim-pane)  
+  3b.[The Shell Pane](#the-shell-pane)  
+  3c.[The Runtests Controller Pane] (#the-runtests-controller-pane)  
+4.[An Example Walkthrough] (#an-example-walkthrough)  
+5.[Features](#features)  
 
 ##What is cs100-runtests?
 ``cs100-runtests`` is a script developed to assist testing of student-made bash shells.
@@ -150,8 +143,8 @@ Congratulations. You now know the basic features of ``cs100-runtests``.
 * If ``shell`` is backgrounded, the controller will attempt to foreground it.
   * ``sh`` must have job control enabled in order for this to work properly.
 * The ``cs100-runtests`` session will be terminated when:
-  * ``SIGINT``, ``SIGQUIT``, ``SIGTERM``, ``SIGTSTP`` signals are received
-	* ``read`` exits with an error
+  * ``SIGINT``, ``SIGQUIT``, ``SIGTERM``, ``SIGTSTP`` signals are received  
+  * ``read`` exits with an error
 	  - This will happen when the user types ``Control+D`` after nothing else when prompted for a command.
 * The mouse can be used to shift focus between all three panes.
 * Pressing enter without entering a command will run the previously entered command. (useful for speeding through test cases)
