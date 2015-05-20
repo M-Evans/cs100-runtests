@@ -36,8 +36,8 @@ where ``<shell>`` is the shell you want to test (e.g. ``bin/rshell``, ``sh``, ``
 These parameters are optional, as runtests will default to ``bin/rshell`` if no shell is entered, and it is possible to load a test case file within the program after the script has been run.
 
 Three panes are created when ``cs100-runtests`` is started.
-The left pane is the [Vim pane](#the-vim-pane), which contains an open grade file that is created in the current directory. 
-The upper right pane is the [Shell pane](#the-shell-pane), where the user-input <shell> (or default ``bin/rshell``) is started.
+The left pane is the [Vim Pane](#the-vim-pane), which contains an open grade file that is created in the current directory. 
+The upper right pane is the [Shell Pane](#the-shell-pane), where the user-input <shell> (or default ``bin/rshell``) is started.
 The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane). All commands for ``cs100-runtests`` are entered here.
 
 ###The Vim Pane
@@ -63,5 +63,58 @@ The Runtests Controller Pane is controlled with the following commands:
   * ``h?``, ``?h``, ``?``, and ``??`` also print the help message.
 
 ##An Example Walkthrough
+This walkthrough will familiarize you with the basic features and usages of ``cs100-runtests``.
+
+First, start cs100 runtests as such:
+```
+./cs100-runtests bin/rshell exampleFolder/exampleTestCaseFile
+```
+
+You will see the [Vim Pane](#the-vim-pane) to the left, the [Shell Pane](#the-shell-pane) to the upper right, and the [Runtests Controller Pane](#the-runtest-controller-pane) to the lower right. 
+The controller will let you know if you test case file was successfully loaded, and print out the commands available.
+
+(screenshot1 here)
+
+First we will step through one test case. Type ``n`` or ``next`` and press Enter. 
+The first test case should be run, and the result printed in the Shell Pane.
+
+(screenshot2 here)
+
+Step through another test case by just pressing ``Enter``. 
+This utilizes the previous command repeating feature. 
+If no commands are specified, pressing ``Enter`` will run the previously entered command.
+
+(screenshot 3 here)
+
+Now let's try running a previous case. 
+Type in ``p`` or ``previous`` and hit ``Enter`` as many times as you would like. 
+Notice that the controller prints an error message when you attempt to run more test cases commands after the first one has been executed.
+
+(screenshot 4 here)
+
+Let's step forward four times (``next``). Make sure to take advantage of the previous command repeating feature. 
+Now step through one more test case and...
+
+You'll notice that our ``bin/rshell`` has finished executing. 
+
+(screenshot 5 here)
+
+There is no need to quit and restart ``cs100-runtests`` when this is encountered. 
+Simply run the next test case and ``cs100-runtests`` will restart ``bin/rshell``. 
+You will also be notified that ``bin/rshell`` has been restarted.
+
+(screenshot 6 here)
+
+Step through the next test case. This one backgrounds the shell.
+Fortunately, ``cs100-runtests`` is able to use job control to bring back the stopped process. Try the last case.
+
+(Screenshot 7 here)
+
+Now that we have run out of test cases, let's try to run more. 
+Step forward as many times as you would like to. The controller prints out an error notifying you that you have run out of test cases.
+
+(screenshot 8 here)
+
+
 
 ##Features
