@@ -134,10 +134,25 @@ And received 11 points for the objectives on lines 8 and 9:
 g 8 11
 g 9 11
 ```
+(screenshot 10 here)
+
 If you wanted to give a full grade for every objective on every line, run ``full``.
+
+(screenshot 11 here)
 
 Now that we are done testing and grading ``bin/rshell``, type ``exit`` and hit ``Enter`` to stop running ``cs100-runtests``.
 
 Congratulations. You now know the basic features of ``cs100-runtests``.
 
 ##Features
+* If ``shell`` isn't running in the shell pane, it is restarted, and the grader is notified.
+  * This allows for multiple ``exit`` commands in the same test file.
+* If ``shell`` is backgrounded, the controller will attempt to foreground it.
+  * ``sh`` must have job control enabled in order for this to work properly.
+* The ``cs100-runtests`` session will be terminated when:
+  * ``SIGINT``, ``SIGQUIT``, ``SIGTERM``, ``SIGTSTP`` signals are received
+	* ``read`` exits with an error
+	  - This will happen when the user types ``Control+D`` after nothing else when prompted for a command.
+* The mouse can be used to shift focus between all three panes.
+* Pressing enter without entering a command will run the previously entered command. (useful for speeding through test cases)
+* The previous command is displayed in the prompt.
