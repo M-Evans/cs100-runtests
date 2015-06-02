@@ -82,18 +82,29 @@ Now that we are done testing and grading ``bin/rshell``, type ``exit`` and hit `
 Congratulations. You now know the basic features of ``cs100-runtests``.
 
 
+##A more detailed explanation
+
+To start runtests:
+
 ```
-cs100-runtests <shell> <testcasefile>
+cs100-runtests <program> <testcasefile>
 ```
-where ``<shell>`` is the shell you want to test (e.g. ``bin/rshell``, ``sh``, ``bash``, etc.) and <testcasefile> is the path to the file containing all of the test cases you would like to use on your shell.
+where ``<program>`` is the program you want to test (e.g. ``bin/rshell``, ``sh``, ``bash``, etc.) and <testcasefile> is the path to the file containing all of the test cases you would like to use on your shell.
 These parameters are optional, as runtests will default to ``bin/rshell`` if no shell is entered, and it is possible to load a test case file within the program after the script has been run.
 
 Three panes are created when ``cs100-runtests`` is started.
-The left pane is the [Vim Pane](#the-vim-pane), which contains an open grade file that is created in the current directory. 
+The left pane is the [Vim Pane](#the-vim-pane).
 The upper right pane is the [Shell Pane](#the-shell-pane), where the user-input <shell> (or default ``bin/rshell``) is started.
 The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane). All commands for ``cs100-runtests`` are entered here.
 
-##The Vim Pane
+###The Vim Pane
+The Vim Pane contains an open grade file that is located in the current directory. 
+If a grade file does not already exist, a blank file is opened, and you will have to create your own grade file.
+The proper format for a line in a grade file would be 
+```
+[0/<# of points possible>]
+```  
+
 The Vim Pane is controlled with the following commands:
 * ``g <line> <amount>`` or ``grade <line> <amount>`` places the amount entered as a grade on the line entered.
 * ``f <line>`` places a full score on the entered line. 
@@ -101,14 +112,14 @@ The Vim Pane is controlled with the following commands:
 * ``zero`` makes all grades 0.
 * ``full`` makes all grades maximum.
 
-##The Shell Pane
+###The Shell Pane
 The Shell Pane is controlled with the following commands:
 * ``n`` or ``next`` runs the next test case loaded from the test case file.
 * ``p``, ``previous``, ``b``, or ``back`` runs the previous test case loaded from the test case file.
   * Note: Pressing enter following a ``next`` or ``previous`` command will repeat it.
 * ``l <testcasefile>`` or ``load <testcasefile>`` loads <testcasefile> into rshell, discarding previously loaded test cases.
 
-##The Runtests Controller Pane
+###The Runtests Controller Pane
 The Runtests Controller Pane is controlled with the following commands:
 * ``c`` or ``clear`` clears the controller screen.
 * ``e``, ``exit``, ``q``, or ``quit`` ends the program.
