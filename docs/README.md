@@ -10,51 +10,51 @@ First, start cs100 runtests as such:
 You will see the [Vim Pane](#the-vim-pane) to the left, the [Shell Pane](#the-shell-pane) to the upper right, and the [Runtests Controller Pane](#the-runtest-controller-pane) to the lower right. 
 The controller will let you know if you test case file was successfully loaded, and print out the commands available.
 
-![ss1.PNG](/screenshots/ss1.PNG)
+![ss1.PNG](screenshots/ss1.PNG)
 
 First we will step through one test case. Type ``n`` or ``next`` and press Enter. 
 The first test case should be run, and the result printed in the Shell Pane.
 
-![ss2.PNG](/screenshots/ss2.PNG)
+![ss2.PNG](screenshots/ss2.PNG)
 
 Step through another test case by just pressing ``Enter``. 
 This utilizes the previous command repeating feature. 
 If no commands are specified, pressing ``Enter`` will run the previously entered command.
 
-![ss3.PNG](/screenshots/ss3.PNG)
+![ss3.PNG](screenshots/ss3.PNG)
 
 Now let's try running a previous case. 
 Type in ``p`` or ``previous`` and hit ``Enter`` as many times as you would like. 
 Notice that the controller prints an error message when you attempt to run more test cases commands after the first one has been executed.
 
-![ss4.PNG](/screenshots/ss4.PNG)
+![ss4.PNG](screenshots/ss4.PNG)
 
 Let's step forward four times (``next``). Make sure to take advantage of the previous command repeating feature. 
 Now step through one more test case and...
 
 You'll notice that our ``bin/rshell`` has finished executing. 
 
-![ss5.PNG](/screenshots/ss5.PNG)
+![ss5.PNG](screenshots/ss5.PNG)
 
 There is no need to quit and restart ``cs100-runtests`` when this is encountered. 
 Simply run the next test case and ``cs100-runtests`` will restart ``bin/rshell``. 
 You will also be notified that ``bin/rshell`` has been restarted.
 
-![ss6.PNG](/screenshots/ss6.PNG)
+![ss6.PNG](screenshots/ss6.PNG)
 
 Step through the next test case. This one backgrounds the shell.
 Fortunately, ``cs100-runtests`` is able to use job control to bring back the stopped process. Try the last case.
 
-![ss7.PNG](/screenshots/ss7.PNG)
+![ss7.PNG](screenshots/ss7.PNG)
 
 Now that we have run out of test cases, let's try to run more. 
 Step forward as many times as you would like to. The controller prints out an error notifying you that you have run out of test cases.
 
-![ss8.PNG](/screenshots/ss8.PNG)
+![ss8.PNG](screenshots/ss8.PNG)
 
 Now that we have finished testing the ``shell``, let's grade it. First, zero out all of the grades by entering ``zero`` in the controller pane. 
 
-![ss9.PNG](/screenshots/ss9.PNG)
+![ss9.PNG](screenshots/ss9.PNG)
 
 Let's say the student earned full credit for the objectives on lines 5 and 7.
 To enter their grades, type in:
@@ -71,11 +71,11 @@ And received 11 points for the objectives on lines 8 and 9:
 g 8 11
 g 9 11
 ```
-![ss10.PNG](/screenshots/ss10.PNG)
+![ss10.PNG](screenshots/ss10.PNG)
 
 If you wanted to give a full grade for every objective on every line, run ``full``.
 
-![ss11.PNG](/screenshots/ss11.PNG)
+![ss11.PNG](screenshots/ss11.PNG)
 
 Now that we are done testing and grading ``bin/rshell``, type ``exit`` and hit ``Enter`` to stop running ``cs100-runtests``.
 
