@@ -10,51 +10,51 @@ First, start cs100 runtests as such:
 You will see the [Vim Pane](#the-vim-pane) to the left, the [Shell Pane](#the-shell-pane) to the upper right, and the [Runtests Controller Pane](#the-runtest-controller-pane) to the lower right. 
 The controller will let you know if you test case file was successfully loaded, and print out the commands available.
 
-(screenshot1 here)
+![ss1.PNG](/screenshots/ss1.PNG)
 
 First we will step through one test case. Type ``n`` or ``next`` and press Enter. 
 The first test case should be run, and the result printed in the Shell Pane.
 
-(screenshot2 here)
+![ss2.PNG](/screenshots/ss2.PNG)
 
 Step through another test case by just pressing ``Enter``. 
 This utilizes the previous command repeating feature. 
 If no commands are specified, pressing ``Enter`` will run the previously entered command.
 
-(screenshot 3 here)
+![ss3.PNG](/screenshots/ss3.PNG)
 
 Now let's try running a previous case. 
 Type in ``p`` or ``previous`` and hit ``Enter`` as many times as you would like. 
 Notice that the controller prints an error message when you attempt to run more test cases commands after the first one has been executed.
 
-(screenshot 4 here)
+![ss4.PNG](/screenshots/ss4.PNG)
 
 Let's step forward four times (``next``). Make sure to take advantage of the previous command repeating feature. 
 Now step through one more test case and...
 
 You'll notice that our ``bin/rshell`` has finished executing. 
 
-(screenshot 5 here)
+![ss5.PNG](/screenshots/ss5.PNG)
 
 There is no need to quit and restart ``cs100-runtests`` when this is encountered. 
 Simply run the next test case and ``cs100-runtests`` will restart ``bin/rshell``. 
 You will also be notified that ``bin/rshell`` has been restarted.
 
-(screenshot 6 here)
+![ss6.PNG](/screenshots/ss6.PNG)
 
 Step through the next test case. This one backgrounds the shell.
 Fortunately, ``cs100-runtests`` is able to use job control to bring back the stopped process. Try the last case.
 
-(Screenshot 7 here)
+![ss7.PNG](/screenshots/ss7.PNG)
 
 Now that we have run out of test cases, let's try to run more. 
 Step forward as many times as you would like to. The controller prints out an error notifying you that you have run out of test cases.
 
-(screenshot 8 here)
+![ss8.PNG](/screenshots/ss8.PNG)
 
 Now that we have finished testing the ``shell``, let's grade it. First, zero out all of the grades by entering ``zero`` in the controller pane. 
 
-(screenshot 9 here)
+![ss9.PNG](/screenshots/ss9.PNG)
 
 Let's say the student earned full credit for the objectives on lines 5 and 7.
 To enter their grades, type in:
@@ -71,11 +71,11 @@ And received 11 points for the objectives on lines 8 and 9:
 g 8 11
 g 9 11
 ```
-(screenshot 10 here)
+![ss10.PNG](/screenshots/ss10.PNG)
 
 If you wanted to give a full grade for every objective on every line, run ``full``.
 
-(screenshot 11 here)
+![ss11.PNG](/screenshots/ss11.PNG)
 
 Now that we are done testing and grading ``bin/rshell``, type ``exit`` and hit ``Enter`` to stop running ``cs100-runtests``.
 
@@ -93,9 +93,10 @@ where ``<program>`` is the program you want to test (e.g. ``bin/rshell``, ``sh``
 These parameters are optional, as runtests will default to ``bin/rshell`` if no shell is entered, and it is possible to load a test case file within the program after the script has been run.
 
 Three panes are created when ``cs100-runtests`` is started.
-The left pane is the [Vim Pane](#the-vim-pane).
-The upper right pane is the [Shell Pane](#the-shell-pane), where the user-input <shell> (or default ``bin/rshell``) is started.
-The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane). All commands for ``cs100-runtests`` are entered here.
+The left pane is the [Vim Pane](#the-vim-pane).  
+The upper right pane is the [Shell Pane](#the-shell-pane).  
+The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane).
+All commands for ``cs100-runtests`` are entered here.
 
 ###The Vim Pane
 The Vim Pane contains an open grade file that is located in the current directory. 
@@ -113,6 +114,8 @@ The Vim Pane is controlled with the following commands:
 * ``full`` makes all grades maximum.
 
 ###The Shell Pane
+The Shell Pane is where the user input ``<program>`` (or default ``bin/rshell``) is started.
+
 The Shell Pane is controlled with the following commands:
 * ``n`` or ``next`` runs the next test case loaded from the test case file.
 * ``p``, ``previous``, ``b``, or ``back`` runs the previous test case loaded from the test case file.
