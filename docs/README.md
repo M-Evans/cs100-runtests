@@ -62,6 +62,8 @@ To enter their grades, type in:
 f 5
 f 7
 ```
+![ss12.PNG](screenshots/ss12.PNG)
+
 Perhaps they received 4 points for the objective on line 6:
 ```
 g 6 4
@@ -96,7 +98,18 @@ Three panes are created when ``cs100-runtests`` is started.
 The left pane is the [Vim Pane](#the-vim-pane).  
 The upper right pane is the [Shell Pane](#the-shell-pane).  
 The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane).
-All commands for ``cs100-runtests`` are entered here.
+
+###The Runtests Controller Pane
+The Runtests Controller Pane is where all controls will be entered.
+If no test case file is specified when running the script, you can manually load a test case file in from this pane.
+Properly formatted test case files contain each individual test case on a separate line. (see sample test cases in examplefolder)
+
+The Runtests Controller Pane is controlled with the following commands:
+* ``c`` or ``clear`` clears the controller screen.
+* ``e``, ``exit``, ``q``, or ``quit`` ends the program.
+* ``h`` or ``help`` prints a small help message detailing the controls for ``cs100-runtests``.
+  * ``h?``, ``?h``, ``?``, and ``??`` also print the help message.
+
 
 ###The Vim Pane
 The Vim Pane contains an open grade file that is located in the current directory. 
@@ -105,6 +118,8 @@ The proper format for a line in a grade file would be
 ```
 [0/<# of points possible>]
 ```  
+The grade file is automatically saved upon exit.
+For an example of a properly formatted grade file, see the example grade file provided and accessed during the walkthrough.
 
 The Vim Pane is controlled with the following commands:
 * ``g <line> <amount>`` or ``grade <line> <amount>`` places the amount entered as a grade on the line entered.
@@ -121,11 +136,4 @@ The Shell Pane is controlled with the following commands:
 * ``p``, ``previous``, ``b``, or ``back`` runs the previous test case loaded from the test case file.
   * Note: Pressing enter following a ``next`` or ``previous`` command will repeat it.
 * ``l <testcasefile>`` or ``load <testcasefile>`` loads <testcasefile> into rshell, discarding previously loaded test cases.
-
-###The Runtests Controller Pane
-The Runtests Controller Pane is controlled with the following commands:
-* ``c`` or ``clear`` clears the controller screen.
-* ``e``, ``exit``, ``q``, or ``quit`` ends the program.
-* ``h`` or ``help`` prints a small help message detailing the controls for ``cs100-runtests``.
-  * ``h?``, ``?h``, ``?``, and ``??`` also print the help message.
 

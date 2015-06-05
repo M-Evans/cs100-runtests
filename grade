@@ -1,17 +1,16 @@
-0 / 819.0
+90 / 90
 
 Grade file
 
-  [0/ 4]  Objective 1
-  [0/ 6]  Objective 2
-  [0/ 8]
-  [0/ 10]
-  [0/ 12]
+  [4/ 4]  Objective 1
+  [6/ 6]  Objective 2
+  [8/ 8]  Objective 3
+  [10/ 10] Objective 4
+  [12/ 12] Objective 5
 
+***Notes about grade file format***
 
-
-
-[] Comment
+[] This text is a comment
   [0/ will not match ]
   ( unless, of course, "zero" is run. )
   ( it doesn't depend on validity of fields to put)
@@ -19,139 +18,17 @@ Grade file
 
 Text can go anywhere. It will not get touched when grading.
 
-  [
-  /
-  29]
+***Example Grade Line Formats***
 
-  <-20> this is not included with the parsing... yet!
+text [10/ 10] text
 
+text
+[10/ 10] text
 
-Lots of tests:
+text [10/ 10]
 
+[10/ 10] text
 
-asdf
-
-[asdf]
-[0/a]
-[0/]
-[0/a]
-
-[]
-[ ]
-[0/]
-[0/]
-[0/ ]
-
-[8]
-[ 8]
-[8 ]
-[ 8 ]
-[9.0]
-[ 9.0]
-[9.0 ]
-[ 9.0 ]
-
-[0/]
-[0/7]
-[0/ ]
-[0/ 7]
-[0/]
-[0/7]
-[0/ ]
-[0/ 7]
-[0/]
-[0/7]
-[0/ ]
-[0/ 7]
-[0/]
-[0/7]
-[0/ ]
-[0/ 7]
-[0/]
-[0/34]
-[0/ ]
-[0/ 34]
-[0/]
-[0/34]
-[0/ ]
-[0/ 34]
-[0/]
-[0/34]
-[0/ ]
-[0/ 34]
-[0/]
-[0/34]
-[0/ ]
-[0/ 34]
-
-[0/ ]
-[0/7 ]
-[0/  ]
-[0/ 7 ]
-[0/ ]
-[0/7 ]
-[0/  ]
-[0/ 7 ]
-[0/ ]
-[0/7 ]
-[0/  ]
-[0/ 7 ]
-[0/ ]
-[0/7 ]
-[0/  ]
-[0/ 7 ]
-[0/ ]
-[0/34 ]
-[0/ ]
-[0/ 34 ]
-[0/ ]
-[0/34 ]
-[0/  ]
-[0/ 34 ]
-[0/ ]
-[0/34 ]
-[0/  ]
-[0/ 34 ]
-[0/ ]
-[0/34 ]
-[0/  ]
-[0/ 34 ]
-
-
-asdf [0/2] jkl;
-asdf [0/2] jkl;
-asdf [0/ 2] jkl;
-asdf [0/2 ] jkl;
-asdf [0/ 2] jkl;
-asdf [0/ 2 ] jkl;
-asdf [0/ 2 ] jkl;
-asdf [0/3.0] jkl;
-asdf [0/3.0] jkl;
-asdf [0/ 3.0] jkl;
-asdf [0/3.0 ] jkl;
-asdf [0/ 3.0] jkl;
-asdf [0/ 3.0 ] jkl;
-asdf [0/ 3.0 ] jkl;
-asdf [0/4.0] jkl;
-asdf [0/4.0] jkl;
-asdf [0/4.0] jkl;
-asdf [0/ 4.0] jkl;
-asdf [0/4.0 ] jkl;
-asdf [0/4.0] jkl;
-asdf [0/ 4.0] jkl;
-asdf [0/ 4.0 ] jkl;
-asdf [0/ 4.0] jkl;
-asdf [0/ 4.0 ] jkl;
-asdf [0/ 4.0 ] jkl;
-asdf [0/4.0] jkl;
-asdf [0/4.0] jkl;
-asdf [0/4.0] jkl;
-asdf [0/ 4.0] jkl;
-asdf [0/4.0 ] jkl;
-asdf [0/4.0] jkl;
-asdf [0/ 4.0] jkl;
-asdf [0/ 4.0 ] jkl;
-asdf [0/ 4.0] jkl;
-asdf [0/ 4.0 ] jkl;
-asdf [0/ 4.0 ] jkl;
+[10/ 10]
+text
 
