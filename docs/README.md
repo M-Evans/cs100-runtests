@@ -52,7 +52,9 @@ Step forward as many times as you would like to. The controller prints out an er
 
 ![ss8.PNG](screenshots/ss8.PNG)
 
-Now that we have finished testing the ``shell``, let's grade it. First, zero out all of the grades by entering ``zero`` in the controller pane. 
+Now that we have finished testing the ``shell``, let's grade it. 
+Grading can happen at any time while you're using ``cs100-runtests``.
+First, zero out all of the grades by entering ``zero`` in the controller pane. 
 
 ![ss9.PNG](screenshots/ss9.PNG)
 
@@ -62,7 +64,7 @@ To enter their grades, type in:
 f 5
 f 7
 ```
-![ss12.PNG](screenshots/ss12.PNG)
+![ss10.PNG](screenshots/ss12.PNG)
 
 Perhaps they received 4 points for the objective on line 6:
 ```
@@ -73,11 +75,11 @@ And received 11 points for the objectives on lines 8 and 9:
 g 8 11
 g 9 11
 ```
-![ss10.PNG](screenshots/ss10.PNG)
+![ss11.PNG](screenshots/ss10.PNG)
 
 If you wanted to give a full grade for every objective on every line, run ``full``.
 
-![ss11.PNG](screenshots/ss11.PNG)
+![ss12.PNG](screenshots/ss11.PNG)
 
 Now that we are done testing and grading ``bin/rshell``, type ``exit`` and hit ``Enter`` to stop running ``cs100-runtests``.
 
@@ -91,13 +93,14 @@ To start runtests:
 ```
 cs100-runtests <program> <testcasefile>
 ```
-where ``<program>`` is the program you want to test (e.g. ``bin/rshell``, ``sh``, ``bash``, etc.) and <testcasefile> is the path to the file containing all of the test cases you would like to use on your shell.
+where ``<program>`` is the path to the program you want to test (e.g. ``bin/rshell``, ``sh``, ``bash``, etc.) 
+and <testcasefile> is the path to the file containing all of the test cases you would like to use on your shell.
 These parameters are optional, as runtests will default to ``bin/rshell`` if no shell is entered, and it is possible to load a test case file within the program after the script has been run.
 
 Three panes are created when ``cs100-runtests`` is started.
+The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane).
 The left pane is the [Vim Pane](#the-vim-pane).  
 The upper right pane is the [Shell Pane](#the-shell-pane).  
-The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane).
 
 ###The Runtests Controller Pane
 The Runtests Controller Pane is where all controls will be entered.
@@ -119,7 +122,7 @@ The proper format for a line in a grade file would be
 [0/<# of points possible>]
 ```  
 The grade file is automatically saved upon exit.
-For an example of a properly formatted grade file, see the example grade file provided and accessed during the walkthrough.
+For an example of a properly formatted grade file, see the example grade file in the current directory.
 
 The Vim Pane is controlled with the following commands:
 * ``g <line> <amount>`` or ``grade <line> <amount>`` places the amount entered as a grade on the line entered.
@@ -135,5 +138,5 @@ The Shell Pane is controlled with the following commands:
 * ``n`` or ``next`` runs the next test case loaded from the test case file.
 * ``p``, ``previous``, ``b``, or ``back`` runs the previous test case loaded from the test case file.
   * Note: Pressing enter following a ``next`` or ``previous`` command will repeat it.
-* ``l <testcasefile>`` or ``load <testcasefile>`` loads <testcasefile> into rshell, discarding previously loaded test cases.
+* ``l <testcasefile>`` or ``load <testcasefile>`` loads <testcasefile> into ``<program>``, discarding previously loaded test cases.
 
