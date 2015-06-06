@@ -23,13 +23,14 @@ If no commands are specified, pressing ``Enter`` will run the previously entered
 
 ![ss3.PNG](screenshots/ss3.PNG)
 
-Now let's try running a previous case. 
+Now let's try running previous test cases. 
 Type in ``p`` or ``previous`` and hit ``Enter`` as many times as you would like. 
-Notice that the controller prints an error message when you attempt to run more test cases commands after the first one has been executed.
+Notice that the controller prints an error message when you attempt to run more test case commands after you reach the very first one.
 
 ![ss4.PNG](screenshots/ss4.PNG)
 
-Let's step forward four times (``next``). Make sure to take advantage of the previous command repeating feature. 
+Let's step forward four times (``next``). 
+Be sure to take advantage of the previous command repeating feature. 
 Now step through one more test case and...
 
 You'll notice that our ``bin/rshell`` has finished executing. 
@@ -43,12 +44,14 @@ You will also be notified that ``bin/rshell`` has been restarted.
 ![ss6.PNG](screenshots/ss6.PNG)
 
 Step through the next test case. This one backgrounds the shell.
-Fortunately, ``cs100-runtests`` is able to use job control to bring back the stopped process. Try the last case.
+Fortunately, ``cs100-runtests`` is able to use job control to bring back the stopped process.
+Try the last case, and you will see that ``cs100-runtests`` has foregrounded the program.
 
 ![ss7.PNG](screenshots/ss7.PNG)
 
 Now that we have run out of test cases, let's try to run more. 
-Step forward as many times as you would like to. The controller prints out an error notifying you that you have run out of test cases.
+Step forward as many times as you would like to. 
+The controller prints out an error notifying you that you have run out of test cases.
 
 ![ss8.PNG](screenshots/ss8.PNG)
 
@@ -64,7 +67,7 @@ To enter their grades, type in:
 f 5
 f 7
 ```
-![ss10.PNG](screenshots/ss12.PNG)
+![ss10.PNG](screenshots/ss10.PNG)
 
 Perhaps they received 4 points for the objective on line 6:
 ```
@@ -75,11 +78,11 @@ And received 11 points for the objectives on lines 8 and 9:
 g 8 11
 g 9 11
 ```
-![ss11.PNG](screenshots/ss10.PNG)
+![ss11.PNG](screenshots/ss11.PNG)
 
 If you wanted to give a full grade for every objective on every line, run ``full``.
 
-![ss12.PNG](screenshots/ss11.PNG)
+![ss12.PNG](screenshots/ss12.PNG)
 
 Now that we are done testing and grading ``bin/rshell``, type ``exit`` and hit ``Enter`` to stop running ``cs100-runtests``.
 
