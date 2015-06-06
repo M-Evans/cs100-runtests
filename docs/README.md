@@ -109,7 +109,8 @@ The upper right pane is the [Shell Pane](#the-shell-pane).
 ###The Runtests Controller Pane
 The Runtests Controller Pane is where all controls will be entered.
 If no test case file is specified when running the script, you can manually load a test case file in from this pane.
-Properly formatted test case files contain each individual test case on a separate line. (see sample test cases in examplefolder)
+Properly formatted test case files contain each individual test case on a separate line.
+(see the sample test case files in ``/exampleFolder/sampleTestCases``)
 
 The Runtests Controller Pane is controlled with the following commands:
 * ``c`` or ``clear`` clears the controller screen.
@@ -126,7 +127,9 @@ The proper format for a line in a grade file would be
 [0/<# of points possible>]
 ```  
 The grade file is automatically saved upon exit.
-For an example of a properly formatted grade file, as well as other ways to format it, see the example grade file in the current directory.
+For examples of properly formatted grade files, see the sample grade files in ``/exampleFolder/sampleGradeFiles``.  
+For more information about ways to format the grade file, see the sample grade file provided in the current directory.
+
 
 The Vim Pane is controlled with the following commands:
 * ``g <line> <amount>`` or ``grade <line> <amount>`` places the amount entered as a grade on the line entered.
