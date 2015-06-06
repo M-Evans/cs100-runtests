@@ -145,5 +145,5 @@ The Shell Pane is controlled with the following commands:
 * ``n`` or ``next`` runs the next test case loaded from the test case file.
 * ``p``, ``previous``, ``b``, or ``back`` runs the previous test case loaded from the test case file.
   * Note: Pressing enter following a ``next`` or ``previous`` command will repeat it.
-* ``l <testcasefile>`` or ``load <testcasefile>`` loads <testcasefile> into ``<program>``, discarding previously loaded test cases.
+* ``l <testcasefile>`` or ``load <testcasefile>`` loads ``<testcasefile>`` into ``<program>``, discarding previously loaded test cases.
 
