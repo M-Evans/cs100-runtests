@@ -101,7 +101,7 @@ and <testcasefile> is the path to the file containing all of the test cases you 
 These parameters are optional, as runtests will default to ``bin/rshell`` if no shell is entered, and it is possible to load a test case file within the program after the script has been run.
 
 Three panes are created when ``cs100-runtests`` is started.
-The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane).
+The lower right pane is the [Runtests Controller Pane](#the-runtests-controller-pane).  
 The left pane is the [Vim Pane](#the-vim-pane).  
 The upper right pane is the [Shell Pane](#the-shell-pane).  
 
