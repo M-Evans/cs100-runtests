@@ -8,6 +8,9 @@ Grade file
   [10/ 10] Objective 4
   [12/ 12] Objective 5
 
+
+
+
 ***Notes about grade file format***
 
 [] This text is a comment
@@ -16,19 +19,21 @@ Grade file
   ( it doesn't depend on validity of fields to put)
   ( a zero in the right place )
 
-Text can go anywhere. It will not get touched when grading.
+Text can go anywhere. It will not get touched when grading commands are called.
+This allows you to format the the grade file in any way that is easily readable to you.
 
 ***Example Grade Line Formats***
 
 text [10/ 10] text
 
+text [10/10]
+
+[10/ 10] text
+
 text
-[10/ 10] text
-
-text [10/ 10]
-
-[10/ 10] text
+[10/ 10]
 
 [10/ 10]
 text
 
+Any combination of the above text and [# of points/ total points] will work.

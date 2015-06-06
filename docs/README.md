@@ -90,6 +90,7 @@ Congratulations. You now know the basic features of ``cs100-runtests``.
 
 
 ##A more detailed explanation
+``cs100-runtests`` is a script that can be used by students to test their programs, and by TAs to grade student programs.
 
 To start runtests:
 
@@ -125,7 +126,7 @@ The proper format for a line in a grade file would be
 [0/<# of points possible>]
 ```  
 The grade file is automatically saved upon exit.
-For an example of a properly formatted grade file, see the example grade file in the current directory.
+For an example of a properly formatted grade file, as well as other ways to format it, see the example grade file in the current directory.
 
 The Vim Pane is controlled with the following commands:
 * ``g <line> <amount>`` or ``grade <line> <amount>`` places the amount entered as a grade on the line entered.
